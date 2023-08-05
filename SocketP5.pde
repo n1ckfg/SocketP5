@@ -1,6 +1,5 @@
 import io.socket.client.IO;
 import io.socket.client.Socket;
-import io.socket.emitter.*;
 import io.socket.emitter.Emitter;
 import io.socket.backo.Backoff;
 import io.socket.parser.DecodingException;
@@ -18,14 +17,13 @@ import okhttp3.WebSocket;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-String url = "http://localhost:8080/socketio/:8443";
+String url = "http://localhost:8080"; ///socketio/:8443";
 io.socket.client.Socket socket;
 
 void setup() {
